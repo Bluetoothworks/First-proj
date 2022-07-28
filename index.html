@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="styles.css" />
+        <script
+            src="https://kit.fontawesome.com/0ea902ede5.js"
+            crossorigin="anonymous"
+        ></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <title>Portfolio</title>
+    </head>
+
+    <body>
+        <!-- Navbar section -->
+
+        <nav class="fixed-top navbar">
+            <!-- Navbar brand -->
+            <a href="#home" class="nav-link brand"
+                ><strong> &lt;Bluetoothworks /&gt; </strong></a
+            >
+
+            <!-- Navbar items -->
+
+            <div class="nav-items">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#contact-us" class="nav-link">Contact Us</a>
+            </div>
+        </nav>
+
+        <!-- HomePage Section -->
+
+        <div class="home-container glow" id="home">
+            <h1 class="name">Rik Chatterjee</h1>
+            <div class="introduction">
+                Passionate Web Developer 
+            </div>
+            <div class="socials">
+                <a
+                    href="https://github.com/Bluetoothworks"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <i class="fab fa-github fa-3x socialicons"></i
+                ></a>
+                <a
+                    href="http://facebook.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <i class="fab fa-facebook fa-3x socialicons"></i
+                ></a>
+                <a
+                    href="http://instagra.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <i class="fab fa-instagram fa-3x socialicons"></i
+                ></a>
+                <a
+                    href="http://linkedin.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <i class="fab fa-linkedin fa-3x socialicons"></i
+                ></a>
+                <a
+                    href="http://twitter.co"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <i class="fab fa-twitter fa-3x socialicons"></i
+                ></a>
+            </div>
+            <a
+                class="btn btn-outline-light btn-lg"
+                href="#about"
+                role="button"
+                aria-label="Learn more about me"
+                >More about me</a
+            >
+        </div>
+
+        <!-- About Section -->
+
+        <div class="about-container" id="about">
+            <div class="about">
+                <div class="dp">
+                    <img src="assets/dp.jpg" alt="" class="dp" />
+                </div>
+                <h2 class="title">About Me</h2>
+    
+                <p class="intro">
+                    <br><br>My name is Rik. I am a 3rd year student at Chitkara University Punjab pursuing B.E. Computer Science. 
+                    I am passionate about web designing and data structures and algorithms. My goal is to become a software engineer and give back
+                    to the community and society.
+                </p>
+                <div class="resume-btn-container">
+                    <a href="#" class="resume-btn">Resume</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project section -->
+
+        <div class="projects-container" id="projects">
+            <h2 class="title">Projects</h2>
+            <div class="projects">
+                <div class="card">
+                    <p class="project-title"><b>Home</b></p>
+                    <p class="project-info">
+                        The Portfolio Website of Rik Chatterjee.
+                        Built using HTML, CSS and JavaScript.
+                    </p>
+                    <div class="github"><a href="#">View Website</a></div>
+                </div>
+                <div class="card">
+                    <p class="project-title"><b>Pong Game</b></p>
+                    <p class="project-info">
+                        Ping pong game built using HTML, CSS and JavaScript
+                    </p>
+                    <div class="github"><a href="https://github.com/Bluetoothworks/Amazing-Js-Projects/tree/pingpong/Pong%20game" target="_blank"> View Repository</a></div>  
+                </div>
+                
+            </div>
+        </div>
+
+        <!-- Skills Section -->
+
+        <div class="skills-container" id="skills">
+            <h2 class="title">Skills</h2>
+            <div class="skills">
+               
+                <div class="skill-bar">
+                    <p class="skill-name">Data Structures</p>
+                    <progress value="0.5" class="skill-value"></progress>
+                </div>
+                <div class="skill-bar">
+                    <p class="skill-name">React JS</p>
+                    <progress value="0.3" class="skill-value"></progress>
+                </div>
+                <div class="skill-bar">
+                    <p class="skill-name">JavaScript</p>
+                    <progress value="0.5" class="skill-value"></progress>
+                </div>
+                <div class="skill-bar">
+                    <p class="skill-name">HTML</p>
+                    <progress value="0.7" class="skill-value"></progress>
+                </div>
+                <div class="skill-bar">
+                    <p class="skill-name">CSS</p>
+                    <progress value="0.6" class="skill-value"></progress>
+                </div>
+                
+            </div>
+        </div>
+
+        <!-- ContactMe Section -->
+
+        <footer class="contact-me" id="contact-us">
+            <h2 class="title">Contact Me</h2>
+            <div class="container">
+                <form action="" id="form">
+                    <div class="column one">
+                        <div class="field FirstName">
+                            <label for="FirstName">FirstName</label>
+                            <input type="text" name="FirstName" id="FirstName" placeholder="type your first name here" required>
+                        </div>
+                        <div class="field LastName">
+                            <label for="LastName">LastName</label>
+                            <input type="LastName" name="LastName" id="LastName" placeholder="type your last name here" required>
+                        </div>
+                        <div class="field email">
+                            <label for="Email">email</label>
+                            <input type="email" name="email" id="Email"  placeholder="type a valid email" required>
+                        </div>
+                    </div>
+                    <div class="column two">
+                        <div class="field phone">
+                            <label for="Phone">phone</label>
+                            <input type="tel" name="phone" id="Phone">
+                        </div>
+                        <div class="field Brief">
+                            <label for="Brief">Details</label>
+                            <textarea></textarea>
+                        </div>
+                    </div>
+                    <input type="submit" value="register" class="register">
+                </form>
+            </div>
+            
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>
